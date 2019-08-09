@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+## Copyright (c) 2019 by Yours Truly
+use warnings;
+
+$^I = '.out';
+
+while (<>){
+    s/san/Larry/ig;
+    print;
+};

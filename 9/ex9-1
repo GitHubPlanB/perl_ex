@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+## Copyright (c) 2019 by Yours Truly
+use warnings;
+
+my $what = 'ren|cai';
+
+while (<>){
+    chomp;
+    if (/($what){3}/){
+        print "$_\n";
+    };
+};

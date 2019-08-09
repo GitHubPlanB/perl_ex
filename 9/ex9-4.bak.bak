@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+use warnings;
+$^I=".bak";
+while (<>){
+    if (/\A^#!/){
+        $_ .="## Copyright (c) 2019 by Yours Truly\n";
+    };
+    print;
+};

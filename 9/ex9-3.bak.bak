@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+use warnings;
+
+$^I = '.out';
+
+while (<>){
+    chomp;
+    s/fred/\n/ig;
+    s/wilma/Fred/ig;
+    s/\n/Wilma/ig;
+    print "$_\n";
+};

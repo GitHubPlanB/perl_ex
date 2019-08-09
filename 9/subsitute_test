@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+use warnings;
+
+my $original = 'Fred ate 1 rib';
+#my $copy = $original;
+#$copy =~ s/\d+ ribs?/10 ribs/;
+#(my $copy = $original) =~ s/\d+ ribs?/10 ribs/;
+    #Fred ate 10 ribs 
+    #Fred ate 1 rib 
+#my $copy = $original =~ s/\d+ ribs?/10 ribs/;
+    #1 
+    #Fred ate 10 ribs 
+my $copy = $original =~ s/\d+ ribs?/10 ribs/r;
+    #Fred ate 10 ribs 
+    #Fred ate 1 rib 
+print "$copy \n";
+print "$original \n";

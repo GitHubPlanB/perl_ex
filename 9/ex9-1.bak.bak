@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+use warnings;
+
+my $what = 'ren|cai';
+
+while (<>){
+    chomp;
+    if (/($what){3}/){
+        print "$_\n";
+    };
+};

@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+use warnings;
+
+$^I = '.out';
+
+while (<>){
+    s/san/Larry/ig;
+    print;
+};
